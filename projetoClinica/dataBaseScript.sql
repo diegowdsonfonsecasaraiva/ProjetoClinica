@@ -56,65 +56,65 @@ primary key (codconselho))engine=innodb;
 
 --tabelas auxiliares--
 
-insert into cidade value  ( null, 'santo andre'); 1		
-insert into cidade value ( null, 'maua'); 2		
-insert into cidade value ( null, 'sao caetano do sul'); 3		
-insert into cidade value ( null, 'sao bernardo do campo'); 4		
-insert into cidade value( null, 'diadema');	5	
-insert into cidade value( null, 'ribeirao pires'); 6		
-insert into cidade value( null, 'rio grande da serra');	7	
-insert into cidade value( null, 'sao paulo'); 8		
-insert into cidade value( null, 'baixada santista'); 9	
+insert into cidade value  ( null, 'santo andre'); 	
+insert into cidade value ( null, 'maua'); 		
+insert into cidade value ( null, 'sao caetano do sul'); 		
+insert into cidade value ( null, 'sao bernardo do campo'); 		
+insert into cidade value( null, 'diadema');	
+insert into cidade value( null, 'ribeirao pires'); 	
+insert into cidade value( null, 'rio grande da serra');		
+insert into cidade value( null, 'sao paulo'); 	
+insert into cidade value( null, 'baixada santista'); 
 
 
-insert into sexo value (null, 'feminino'); 1 
-insert into sexo value (null, 'masculino'); 2 
-insert into sexo value (null, 'não informado'); 3 
+insert into sexo value (null, 'feminino'); 
+insert into sexo value (null, 'masculino'); 
+insert into sexo value (null, 'não informado'); 
 
 
-insert into orientacao value( null, 'Heterosexual'); 1
-insert into orientacao value( null, 'Homosexual'); 2
-insert into orientacao value( null, 'Bisexual'); 3
-insert into orientacao value( null, 'Assexual'); 4
-insert into orientacao value( null, 'Pansexual'); 5
+insert into orientacao value( null, 'Heterosexual');
+insert into orientacao value( null, 'Homosexual'); 
+insert into orientacao value( null, 'Bisexual'); 
+insert into orientacao value( null, 'Assexual'); 
+insert into orientacao value( null, 'Pansexual'); 
 
 
-insert into estado_civil value ( null, 'Casado'); 1	
-insert into estado_civil value ( null, 'Uniao Estavel'); 2	
-insert into estado_civil value ( null, 'Viuvo'); 3	
-insert into estado_civil value ( null, 'Solteiro');	4
-insert into estado_civil value ( null, 'Divorsiado'); 5	
+insert into estado_civil value ( null, 'Casado'); 
+insert into estado_civil value ( null, 'Uniao Estavel'); 
+insert into estado_civil value ( null, 'Viuvo'); 
+insert into estado_civil value ( null, 'Solteiro');
+insert into estado_civil value ( null, 'Divorsiado'); 
 
 
-insert into convenio value( null, 'SULAMERICA'); 1
-insert into convenio value( null, 'BRADESCO'); 2
-insert into convenio value( null, 'MEDISERVISE'); 3
-insert into convenio value( null, 'CABESP'); 4
-insert into convenio value( null, 'ITAU'); 5
-insert into convenio value( null, 'AMAFRESP'); 6
-insert into convenio value( null, 'ECONOMUS'); 7
-insert into convenio value( null, 'CAIXA'); 8
-insert into convenio value( null, 'AMIL'); 9
-insert into convenio value( null, 'NOTRE DAME'); 10
-insert into convenio value( null, 'PARTICULAR'); 11
+insert into convenio value( null, 'SULAMERICA'); 
+insert into convenio value( null, 'BRADESCO'); 
+insert into convenio value( null, 'MEDISERVISE'); 
+insert into convenio value( null, 'CABESP'); 
+insert into convenio value( null, 'ITAU'); 
+insert into convenio value( null, 'AMAFRESP'); 
+insert into convenio value( null, 'ECONOMUS'); 
+insert into convenio value( null, 'CAIXA'); 
+insert into convenio value( null, 'AMIL'); 
+insert into convenio value( null, 'NOTRE DAME'); 
+insert into convenio value( null, 'PARTICULAR'); 
 
-insert into especialidades value( null, 'psicologia'); 1
-insert into especialidades value( null, 'psiquiatria'); 2
-insert into especialidades value( null, 'NENHUM SELECIONADO'); 3
+insert into especialidades value( null, 'psicologia'); 
+insert into especialidades value( null, 'psiquiatria'); 
+insert into especialidades value( null, 'NENHUM SELECIONADO'); 
 
-insert into abordagem value (null,'TCC'); 1 			
-insert into abordagem value (null,'PSICANALISTICA'); 2			
-insert into abordagem value( null,'PSICODINAMICA');	3 		
-insert into abordagem value( null,'SISTEMICA');	4		
-insert into abordagem value( null,'POSITIVA'); 5			
-insert into abordagem value( null,'FROIDIANA'); 6			
-insert into abordagem value( null,'BREVE');	7		
-insert into abordagem value( null,'ALCOO E DROGAS'); 8			
-insert into abordagem value( null,'ORIENTAÇAO YUNGIANA'); 9	
-insert into abordagem value( null,'QUALQUER'); 10	
+insert into abordagem value (null,'TCC'); 		
+insert into abordagem value (null,'PSICANALISTICA'); 	
+insert into abordagem value( null,'PSICODINAMICA');		
+insert into abordagem value( null,'SISTEMICA');	
+insert into abordagem value( null,'POSITIVA'); 		
+insert into abordagem value( null,'FROIDIANA'); 		
+insert into abordagem value( null,'BREVE');		
+insert into abordagem value( null,'ALCOO E DROGAS'); 	
+insert into abordagem value( null,'ORIENTAÇAO YUNGIANA'); 
+insert into abordagem value( null,'QUALQUER'); 
 
-insert into conselho_classe value( null, 'CRM'); 1	
-insert into conselho_classe value( null, 'CRP'); 2
+insert into conselho_classe value( null, 'CRM'); 
+insert into conselho_classe value( null, 'CRP');
 
 
 --PACIENTES
