@@ -28,3 +28,5 @@ Route::get('/index', function () {
 Route::get('/pacientes', function () {
     return view('pacientes');
 });
+
+Route::get('/pacientes', 'Paciente');

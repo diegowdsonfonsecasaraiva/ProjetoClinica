@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 class Paciente extends Controller
 {
     //
-    public function minhaView() {
-        return view('pacientes');
+    public function pacientes() {
+        $dados = Paciente::all(); 
+        return view('pacientes', compact('dados'));
     }
+    
     
 }

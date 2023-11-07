@@ -15,11 +15,11 @@
     <form class="row g-3">
     <div class="col-md-4">
         <label for="validationServer01" class="form-label">Nome do  Paciente:</label>
-        <input type="text" class="form-control is-valid" >
+        <input type="text"  name="nome_paciente" class="form-control is-valid" >
     </div>
     <div class="col-md-4">
     <label for="validationServer02" class="form-label">Telefone:</label>
-    <input type="text" class="form-control is-valid" >
+    <input type="number" name="tel_paciente" class="form-control is-valid" >
     <div class="valid-feedback">
     
     </div>
@@ -27,7 +27,7 @@
   <div class="col-md-4">
     <label for="validationServerUsername" class="form-label">Numero da carteira:</label>
     <div class="input-group has-validation">
-      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <input type="text" name="carterinha" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
       <div id="validationServerUsernameFeedback" class="invalid-feedback">
         Please choose a username.
       </div>
@@ -35,7 +35,7 @@
   </div>
   <div class="col-md-3">
     <label for="validationServer03" class="form-label">Cidade:</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select class="form-select is-invalid" name="cidade_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
@@ -43,35 +43,35 @@
   </div>
   <div class="col-md-3">
     <label for="validationServer04" class="form-label">Sexo:</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select class="form-select is-invalid" name="sexo_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Orientação</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select class="form-select is-invalid" name="orientacao_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Estado Civil:</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select class="form-select is-invalid" name="estado_civil_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Convenio Paciente:</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select class="form-select is-invalid" name="convenio_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Abordagem:</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select class="form-select is-invalid"  name="abordagem_paciente"id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
