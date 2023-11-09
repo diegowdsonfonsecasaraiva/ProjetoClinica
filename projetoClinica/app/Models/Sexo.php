@@ -14,5 +14,7 @@ class Sexo extends Model
     public $timestamps = false; // Se não quiser usar created_at e updated_at
 
     protected $fillable = ['sexo']; // Colunas que podem ser preenchidas em massa
-
+    public function getSexo(){
+        return $this->all();
+    }
 }

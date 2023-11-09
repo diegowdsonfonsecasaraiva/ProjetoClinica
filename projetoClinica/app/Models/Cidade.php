@@ -15,4 +15,7 @@ class Cidade extends Model
 
     protected $fillable = ['estado']; // Colunas que podem ser preenchidas em massa
 
+    public function getCidades(){
+        return $this->all();
+    }
 }
