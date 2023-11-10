@@ -36,8 +36,8 @@ Route::post('/profissionais/incluir', [ProfissionalController::class, 'incluir']
 
 
 //ROTA DE LISTAGEM
-Route::get('/listarPacientes', [PacienteController::class, 'listar'])->name('pacientes.listar');
+Route::get('/listarPacientes', [PacienteController::class, 'listar'])->name('listarPacientes.listar');
 
 //ROTA PARA REMOÇÃO
-Route::get('/pacientes/remover/{id}', [PacienteController::class, 'deletar'])->name('pacientes.remover');
+Route::get('/listarPacientes/remover/{id}', [PacienteController::class, 'deletar'])->name('listarPacientes.remover');
 

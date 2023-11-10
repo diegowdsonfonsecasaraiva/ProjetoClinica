@@ -14,6 +14,7 @@
         <table class="table table-stripped">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Nome do  Paciente</th>
                     <th>Telefone</th>
                     <th>Numero da carteira</th>
@@ -30,7 +31,7 @@
                 <!-- LAÇO DE REPETIÇÃO PARA EXIBIR OS REGISTROS DO BANCO --> 
                 @foreach ($dados as $linha)
                 <tr>
-                    <td>{{ $linha->id }}</td>
+                    <td>{{ $linha->cod_paciente }}</td>
                     <td>{{ $linha->nome_paciente }}</td>
                     <td>{{ $linha->tel_paciente }}</td>
                     <td>{{ $linha->carterinha }}</td>
@@ -40,8 +41,7 @@
                     <td>{{ $linha->estado_civil_paciente }}</td>
                     <td>{{ $linha->convenio_paciente }}</td>
                     <td>{{ $linha->abordagem_paciente }}</td>
-                   
-                    <td><a href="{{ route('pacientes.remover', ['id' => $linha->id]) }}" class="btn btn-small btn-danger">-</a></td>
+                    <td><a href="{{ route('listarPacientes.remover', ['id' => $linha->cod_paciente]) }}" class="btn btn-small btn-danger">-</a></td> 
                 </tr>
                 @endforeach
             </tbody>

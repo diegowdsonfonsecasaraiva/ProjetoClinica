@@ -38,7 +38,7 @@ class PacienteController extends Controller
         $paciente = Paciente::find($id);
         //REMOVE O REGISTRO
         $paciente->delete();
-        return redirect('/pacientes');
+        return redirect('/listarPacientes');
     }
 
     function index(){
