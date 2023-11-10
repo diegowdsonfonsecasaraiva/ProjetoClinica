@@ -14,4 +14,7 @@ class Abordagem extends Model
     public $timestamps = false; // Se não quiser usar created_at e updated_at
 
     protected $fillable = ['Abordagem']; // Colunas que podem ser preenchidas em massa
+    public function getAbordagem(){
+        return $this->all();
+    }
 }

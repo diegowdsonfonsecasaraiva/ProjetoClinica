@@ -14,4 +14,7 @@ class EstadoCivil extends Model
     public $timestamps = false; // Se não quiser usar created_at e updated_at
 
     protected $fillable = ['estado_civil']; // Colunas que podem ser preenchidas em massa
+    public function getEstadoCivil(){
+        return $this->all();
+    }
 }

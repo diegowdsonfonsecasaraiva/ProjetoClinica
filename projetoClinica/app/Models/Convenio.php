@@ -15,4 +15,7 @@ class Convenio extends Model
 
     protected $fillable = ['convenio']; // Colunas que podem ser preenchidas em massa
 
+    public function getConvenio(){
+        return $this->all();
+    }
 }

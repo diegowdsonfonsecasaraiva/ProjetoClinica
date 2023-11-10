@@ -57,29 +57,39 @@
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Orientação</label>
     <select class="form-select is-invalid" name="orientacao_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
+    <option selected disabled value="">Escolha uma das opções...</option>
+      @foreach ($listaOrientacao as $c)
+        <option value="{{ $c->codorientacao }}">{{ $c->orientacao }}</option>
+      @endforeach
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Estado Civil:</label>
     <select class="form-select is-invalid" name="estado_civil_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
+    <option selected disabled value="">Escolha uma das opções...</option>
+      @foreach ($listaEstadoCivil as $c)
+        <option value="{{ $c->cod_estado_civil }}">{{ $c->estado_civil }}</option>
+      @endforeach
+    </select>
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Convenio Paciente:</label>
     <select class="form-select is-invalid" name="convenio_paciente" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
+    <option selected disabled value="">Escolha uma das opções...</option>
+      @foreach ($listaConvenio as $c)
+        <option value="{{ $c->codconvenio }}">{{ $c->convenio }}</option>
+      @endforeach
     </select>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Abordagem:</label>
     <select class="form-select is-invalid"  name="abordagem_paciente"id="validationServer04" aria-describedby="validationServer04Feedback" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
+    <option selected disabled value="">Escolha uma das opções...</option>
+      @foreach ($listaAbordagem as $c)
+        <option value="{{ $c->codabordagem }}">{{ $c->Abordagem }}</option>
+      @endforeach
+    </select>
     </select>
   </div>
   

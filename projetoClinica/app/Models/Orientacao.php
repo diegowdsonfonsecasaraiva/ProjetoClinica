@@ -14,4 +14,7 @@ class Orientacao extends Model
     public $timestamps = false; // Se não quiser usar created_at e updated_at
 
     protected $fillable = ['orientacao']; // Colunas que podem ser preenchidas em massa
+    public function getOrientacao(){
+        return $this->all();
+    }
 }

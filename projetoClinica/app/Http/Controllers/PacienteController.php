@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\Paciente;
 use App\Models\Cidade;
 use App\Models\Sexo;
+use App\Models\Orientacao;
+use App\Models\EstadoCivil;
+use App\Models\Convenio;
+use App\Models\Abordagem;
 
 class PacienteController extends Controller
 {
@@ -38,10 +42,25 @@ class PacienteController extends Controller
     }
 
     function index(){
+        //cidade
         $cidade = new Cidade();
         $listaCidades = $cidade->getCidades();
+        //sexo
         $sexo = new Sexo();
         $listaSexo = $sexo->getSexo();
-        return view('pacientes', compact('listaCidades', 'listaSexo'));
+        //orientação
+        $orientacao = new Orientacao();
+        $listaOrientacao = $orientacao->getOrientacao();
+        //EstadoCivil
+        $estadocivil = new EstadoCivil();
+        $listaEstadoCivil = $estadocivil->getEstadoCivil();
+        //Convenio
+        $convenio = new Convenio();
+        $listaConvenio = $convenio->getConvenio();
+        //Abordagem
+        $abordagem = new Abordagem();
+        $listaAbordagem = $abordagem->getAbordagem();
+        //Retorna para view
+        return view('pacientes', compact('listaCidades', 'listaSexo','listaOrientacao','listaEstadoCivil','listaConvenio','listaAbordagem'));
     }
 }
