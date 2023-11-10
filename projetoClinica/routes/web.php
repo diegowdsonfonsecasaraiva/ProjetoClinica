@@ -21,8 +21,12 @@ Route::get('/profissionais', function () {
 Route::get('/index', function () {
     return view('index');
 });
-
+//Pacientes
 Route::get('/pacientes', [PacienteController::class, 'index'])->name('pacientes');
 Route::post('/pacientes/incluir', [PacienteController::class, 'incluir'])->name('pacientes.incluir');
+
+//Profissional
+Route::get('/profissionais', [ProfissionalController::class, 'index'])->name('profissionais');
+Route::post('/profissionais/incluir', [ProfissionalController::class, 'incluir'])->name('profissionais.incluir');
 
 
