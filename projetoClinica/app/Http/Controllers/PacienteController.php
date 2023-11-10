@@ -29,7 +29,7 @@ class PacienteController extends Controller
 
     function listar(){
         $dados = Paciente::all();
-        return view('passageiros.listar', compact('dados')); //DADOS será enviado à view, para listagem das linhas
+        return view('/listarPacientes', compact('dados')); //DADOS será enviado à view, para listagem das linhas
         //LEMBRETE: passageiros.listar = passageiros -> nome da pasta dentro da pasta view, listar -> arquivo PHP propriamente da view.
     }
 
@@ -38,7 +38,7 @@ class PacienteController extends Controller
         $paciente = Paciente::find($id);
         //REMOVE O REGISTRO
         $paciente->delete();
-        return redirect('/passageiros/listar');
+        return redirect('/pacientes');
     }
 
     function index(){

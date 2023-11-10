@@ -21,12 +21,23 @@ Route::get('/profissionais', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/listarPacientes', function () {
+    return view('listarPacientes');
+});
+
 //Pacientes
 Route::get('/pacientes', [PacienteController::class, 'index'])->name('pacientes');
 Route::post('/pacientes/incluir', [PacienteController::class, 'incluir'])->name('pacientes.incluir');
-
+//
 //Profissional
 Route::get('/profissionais', [ProfissionalController::class, 'index'])->name('profissionais');
 Route::post('/profissionais/incluir', [ProfissionalController::class, 'incluir'])->name('profissionais.incluir');
 
+
+//ROTA DE LISTAGEM
+Route::get('/listarPacientes', [PacienteController::class, 'listar'])->name('pacientes.listar');
+
+//ROTA PARA REMOÇÃO
+Route::get('/pacientes/remover/{id}', [PacienteController::class, 'deletar'])->name('pacientes.remover');
 

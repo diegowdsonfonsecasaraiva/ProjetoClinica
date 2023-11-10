@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-<div class="container">
-    <div>
+<div class="container  mt-4">
+    <div class="row">
     <h1>Cadastro Paciente</h1>
     <hr>
     </div>
@@ -94,7 +94,7 @@
   </div>
   
   <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
+    <button class="btn btn-primary" type="submit">Cadastrar</button>
   </div>
 </form>
 </div>
