@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h3>Listagem de Passageiros</h3>
+        <h3>Listagem de Pacientes</h3>
         <a href="/pacientes"  class="btn btn-success">Incluir +</a>
         <table class="table table-stripped">
             <thead>
@@ -35,13 +35,14 @@
                     <td>{{ $linha->nome_paciente }}</td>
                     <td>{{ $linha->tel_paciente }}</td>
                     <td>{{ $linha->carterinha }}</td>
-                    <td>{{ $linha->cidade_paciente }}</td>
-                    <td>{{ $linha->sexo_paciente }}</td>
-                    <td>{{ $linha->orientacao_paciente }}</td>
-                    <td>{{ $linha->estado_civil_paciente }}</td>
-                    <td>{{ $linha->convenio_paciente }}</td>
-                    <td>{{ $linha->abordagem_paciente }}</td>
-                    <td><a href="{{ route('listarPacientes.remover', ['id' => $linha->cod_paciente]) }}" class="btn btn-small btn-danger">-</a></td> 
+                    <td>{{ $linha->cidade->estado }}</td>
+                    <td>{{ $linha->sexo->sexo }}</td>
+                    <td>{{ $linha->orientacao->orientacao }}</td>
+                    <td>{{ $linha->estadoCivil->estado_civil }}</td>
+                    <td>{{ $linha->convenio->convenio }}</td>
+                    <td>{{ $linha->abordagem->Abordagem }}</td>
+                    <td><a href="{{ route('listarPacientes.remover', ['id' => $linha->cod_paciente]) }}" class="btn btn-small btn-danger">-</a>
+                        <a href="{{ route('pacientes.edit', ['id' => $linha->cod_paciente]) }}" class="btn btn-small btn-warning">!</a></td> 
                 </tr>
                 @endforeach
             </tbody>

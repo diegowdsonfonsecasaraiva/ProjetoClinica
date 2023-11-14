@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Paciente extends Model
 {
@@ -56,5 +57,15 @@ class Paciente extends Model
     public function abordagem()
     {
         return $this->belongsTo(Abordagem::class, 'abordagem_paciente', 'codabordagem');
+    }
+
+    public function evolucao_enfermagem()
+    {
+        return $this->hasMany(Evolucao_enf::class, 'evolucao_enf', 'id_evo_enf');
+    }
+
+    public function evolucao_medica()
+    {
+        return $this->hasMany(Evolucao_medica::class, 'evolucao_medica', 'id_evo_med');
     }
 }
